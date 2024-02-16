@@ -1,0 +1,48 @@
+2022-01-20T00:49:52+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/elementor/modules/safe-mode/module.php 中第 110 行的 Out of memory (allocated 31981568) (tried to allocate 20480 bytes)
+
+2022-01-20T01:05:04+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-includes/functions.php 中第 624 行的 Out of memory (allocated 84934656) (tried to allocate 73728 bytes)
+
+2022-01-20T01:05:15+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/elementor/includes/elements/section.php 中第 1143 行的 Out of memory (allocated 15204352) (tried to allocate 131072 bytes)
+
+2022-01-20T01:05:15+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/elementor/includes/elements/column.php 中第 896 行的 Out of memory (allocated 25690112) (tried to allocate 49152 bytes)
+
+2022-01-20T01:16:22+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-includes/pomo/translations.php 中第 100 行的 Out of memory (allocated 91226112) (tried to allocate 20480 bytes)
+
+2022-01-20T01:29:50+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-admin/includes/post.php 中第 1508 行的 Out of memory (allocated 26214400) (tried to allocate 12288 bytes)
+
+2022-01-20T01:43:03+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version3/class-wc-rest-terms-controller.php 中第 652 行的 Out of memory (allocated 82837504) (tried to allocate 32768 bytes)
+
+2022-01-20T01:52:20+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/themes/astra/assets/svg/svgs.json 中第 1 行的 Out of memory (allocated 24117248) (tried to allocate 1216512 bytes)
+
+2022-01-20T01:53:16+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/themes/astra/inc/class-astra-dynamic-css.php 中第 537 行的 Out of memory (allocated 61341696) (tried to allocate 131072 bytes)
+
+2022-01-20T01:58:50+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-includes/functions.php 中第 624 行的 Out of memory (allocated 25690112) (tried to allocate 20480 bytes)
+
+2022-01-20T02:26:48+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-includes/functions.wp-scripts.php 中第 133 行的 Out of memory (allocated 24117248) (tried to allocate 663552 bytes)
+
+2022-01-20T03:08:16+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-includes/functions.php 中第 624 行的 Out of memory (allocated 82837504) (tried to allocate 163840 bytes)
+
+2022-01-20T03:14:13+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-includes/class.wp-scripts.php 中第 301 行的 Out of memory (allocated 30408704) (tried to allocate 987136 bytes)
+
+2022-01-20T03:15:57+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-admin/admin-ajax.php 中第 39 行的 Out of memory (allocated 87031808) (tried to allocate 147456 bytes)
+
+2022-01-20T03:16:30+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/includes/admin/class-wc-admin-assets.php 中第 146 行的 Out of memory (allocated 40894464) (tried to allocate 32768 bytes)
+
+2022-01-20T03:25:59+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version2/class-wc-rest-system-status-v2-controller.php 中第 557 行的 Out of memory (allocated 11534336) (tried to allocate 36864 bytes)
+
+2022-01-20T03:25:59+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version2/class-wc-rest-products-v2-controller.php 中第 1856 行的 Out of memory (allocated 82837504) (tried to allocate 32768 bytes)
+
+2022-01-20T03:25:59+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php 中第 518 行的 Out of memory (allocated 9437184) (tried to allocate 32768 bytes)
+
+2022-01-20T03:25:59+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-includes/rest-api/class-wp-rest-server.php 中第 895 行的 Out of memory (allocated 9437184) (tried to allocate 20480 bytes)
+
+2022-01-20T03:26:05+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/elementor/includes/editor-templates/library-layout.php 中第 1 行的 Out of memory (allocated 15728640) (tried to allocate 32768 bytes)
+
+2022-01-20T03:26:11+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/includes/rest-api/Controllers/Version1/class-wc-rest-products-v1-controller.php 中第 2600 行的 Out of memory (allocated 89128960) (tried to allocate 32768 bytes)
+
+2022-01-20T03:27:06+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/themes/astra/functions.php 中第 67 行的 Out of memory (allocated 61341696) (tried to allocate 184320 bytes)
+
+2022-01-20T03:27:06+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/themes/astra/functions.php 中第 67 行的 Out of memory (allocated 23592960) (tried to allocate 184320 bytes)
+
+2022-01-20T03:27:06+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/themes/astra/functions.php 中第 67 行的 Out of memory (allocated 11010048) (tried to allocate 184320 bytes)
+

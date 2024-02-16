@@ -1,0 +1,37 @@
+2022-01-19T18:06:28+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/API/Notes.php 中第 228 行的 Out of memory (allocated 4718592) (tried to allocate 5242880 bytes)
+
+2022-01-19T18:18:35+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/i18n/states.php 中第 903 行的 Out of memory (allocated 66060288) (tried to allocate 524288 bytes)
+
+2022-01-19T18:27:19+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/includes/wc-template-functions.php 中第 1670 行的 Out of memory (allocated 27787264) (tried to allocate 32768 bytes)
+
+2022-01-19T18:39:34+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-includes/functions.php 中第 624 行的 Out of memory (allocated 25690112) (tried to allocate 20480 bytes)
+
+2022-01-19T18:43:19+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-includes/functions.php 中第 624 行的 Out of memory (allocated 63438848) (tried to allocate 20480 bytes)
+
+2022-01-19T18:56:39+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/elementor/modules/dynamic-tags/module.php 中第 160 行的 Out of memory (allocated 67633152) (tried to allocate 20480 bytes)
+
+2022-01-19T18:57:13+00:00 CRITICAL Out of memory (allocated 34078720) (tried to allocate 266240 bytes) in /opt/lampp/htdocs/web2/wp-includes/pomo/streams.php on line 118
+
+2022-01-19T18:57:33+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/themes/astra/assets/svg/svgs.json 中第 1 行的 Out of memory (allocated 11534336) (tried to allocate 1216512 bytes)
+
+2022-01-19T21:40:15+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Features/Marketing.php 中第 270 行的 Uncaught TypeError: count(): Argument #1 ($value) must be of type Countable|array, null given in /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Features/Marketing.php:270
+Stack trace:
+#0 /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/Features/Marketing.php(270): count(NULL)
+#1 /opt/lampp/htdocs/web2/wp-content/plugins/woocommerce/packages/woocommerce-admin/src/API/Marketing.php(118): Automattic\WooCommerce\Admin\Features\Marketing->get_knowledge_base_posts('marketing')
+#2 /opt/lampp/htdocs/web2/wp-includes/rest-api/class-wp-rest-server.php(1160): Automattic\WooCommerce\Admin\API\Marketing->get_knowledge_base_posts(Object(WP_REST_Request))
+#3 /opt/lampp/htdocs/web2/wp-includes/rest-api/class-wp-rest-server.php(1007): WP_REST_Server->respond_to_request(Object(WP_REST_Request), '/wc-admin/marke...', Array, NULL)
+#4 /opt/lampp/htdocs/web2/wp-includes/rest-api/class-wp-rest-server.php(440): WP_REST_Server->dispatch(Object(WP_REST_Request))
+#5 /opt/lampp/htdocs/web2/wp-includes/rest-api.php(354): WP_REST_Server->serve_request('/wc-admin/marke...')
+#6 /opt/lampp/htdocs/web2/wp-includes/class-wp-hook.php(287): rest_api_loaded(Object(WP))
+#7 /opt/lampp/htdocs/web2/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#8 /opt/lampp/htdocs/web2/wp-includes/plugin.php(551): WP_Hook->do_action(Array)
+#9 /opt/lampp/htdocs/web2/wp-includes/class-wp.php(388): do_action_ref_array('parse_request', Array)
+#10 /opt/lampp/htdocs/web2/wp-includes/class-wp.php(745): WP->parse_request('')
+#11 /opt/lampp/htdocs/web2/wp-includes/functions.php(1291): WP->main('')
+#12 /opt/lampp/htdocs/web2/wp-blog-header.php(16): wp()
+#13 /opt/lampp/htdocs/web2/index.php(17): require('/opt/lampp/htdo...')
+#14 {main}
+  thrown
+
+2022-01-19T22:31:24+00:00 CRITICAL /opt/lampp/htdocs/web2/wp-content/themes/astra/inc/class-astra-dynamic-css.php 中第 2419 行的 Out of memory (allocated 23592960) (tried to allocate 524288 bytes)
+

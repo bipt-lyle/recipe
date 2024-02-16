@@ -1,0 +1,69 @@
+{% extends "myapp/users/base.html" %}
+
+{% block main_body %}  
+<center>
+    <br/><br/><br/>
+    <table width="700">
+        <tr>
+            <th>Ingredients</th>
+            <th>option</th>
+        </tr>
+        {% for re in recipelist %}
+            <tr>
+                
+                <td>{{re.Ingredients}}</td>
+                
+                <td>
+                    <a href="javascript:doDel('{% url 'delIngredients' re.id %}');">delete</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <br/><br/>
+    
+    
+        <form action="{% url 'filter' %}" method="post">
+            {% csrf_token %}
+            {% for he in obflavor %} 
+            <label for="flav"></label>
+            
+                <input type="checkbox" name="flavor" value={{he.flavor}}>{{he.flavor}} 
+            {% endfor %}
+            
+            <br/><br/>
+        
+            <button type="submit"> Confirm</button>
+            <button onclick="window.location.href='{% url 'recipe3' %}'"> Reset</button>
+        </form>
+    
+    <br/><br/>
+    <p>        
+        <table width="1000">
+            <tr>
+                
+                <th>Recipe</th>
+                <th>Flavor</th>
+                <th>Method</th>
+                <th>Ingredients</th>
+            </tr>
+            {% for he in filterrecipe %}  
+                <tr>
+                    
+                    <td><a href="{% url 'details' he.id %}">{{he.Dname}}</a></td>
+                    <td>{{he.flavor}}</td>
+                    <td>{{he.gongyi}}</td>
+                    <td>{{he.Ingre}}</td>
+                </tr>
+            {% endfor %}
+        </table>
+            
+        
+    </p>
+    <button onclick="window.location.href='{% url 'add' %}'">Add</button>
+    <a href="javascript:doback('{% url 'indexfood' %}');">
+        <button>return</button>
+        </a>
+
+</center>
+{% endblock %}
+
+

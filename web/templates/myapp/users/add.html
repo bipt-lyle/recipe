@@ -1,0 +1,39 @@
+{% extends "myapp/users/base.html" %}
+
+{% block main_body %}
+
+
+<div class="dd">
+    <ul>
+        <form action="{% url 'add2' %}" method="post">
+            {% csrf_token %}
+            <li><input type="checkbox" name="likes" value="cabbage" id="cb1"/><label for="cb1"><img src="static\baocai.png" /></label></li>
+            <li><input type="checkbox" name="likes" value="green onion" id="cb2"/><label for="cb2"><img src="static\dacong.png" /></label></li>
+            <li><input type="checkbox" name="likes" value="cauliflower" id="cb3"/><label for="cb3"><img src="static\huacai.png" /></label></li>
+            <li><input type="checkbox" name="likes" value="cucumber" id="cb4"/><label for="cb4"><img src="static\huanggua.png" /></label></li>
+            <li><input type="checkbox" name="likes" value="carrot" id="cb5"/><label for="cb5"><img src="static\huluobu.png"></label></li>
+            <li><input type="checkbox" name="likes" value="tofu" id="cb6"/><label for="cb6"><img src="static\doufu.png"></label></li>
+            <li><input type="checkbox" name="likes" value="pumpkin" id="cb7"/><label for="cb7"><img src="static\nangua.png"></label></li>
+            <li><input type="checkbox" name="likes" value="root" id="cb8"/><label for="cb8"><img src="static\ou.png"></label></li>
+            <li><input type="checkbox" name="likes" value="eggplant" id="cb9"/><label for="cb9"><img src="static\qiezi.png"></label></li>
+            <li><input type="checkbox" name="likes" value="green peper" id="cb10"/><label for="cb10"><img src="static\qinglajiao.png"></label></li>
+            <li><input type="checkbox" name="likes" value="ginger" id="cb11"/><label for="cb11"><img src="static\shengjiang.png"></label></li>
+            <li><input type="checkbox" name="likes" value="potato" id="cb12"/><label for="cb12"><img src="static\tudou.png"></label></li>
+            <li><input type="checkbox" name="likes" value="shrimp" id="cb13"/><label for="cb13"><img src="static\xia.png"></label></li>
+            <li><input type="checkbox" name="likes" value="pork" id="cb14"/><label for="cb14"><img src="static\zhurou.png"></label></li>
+            <li><input type="checkbox" name="likes" value="tomato" id="cb15"/><label for="cb15"><img src="static\xihongshi.png"></label></li>
+            <li><input type="checkbox" name="likes" value="broccoli" id="cb16"/><label for="cb16"><img src="static\xilanhua.png"></label></li>
+            <li><input type="checkbox" name="likes" value="corn" id="cb17"/><label for="cb17"><img src="static\yumi.png"></label></li>
+            <li><input type="checkbox" name="likes" value="milk" id="cb18"/><label for="cb18"><img src="static\niunai.png"></label></li>
+            <li><input type="checkbox" name="likes" value="beef" id="cb19"/><label for="cb19"><img src="static\niurou-.png"></label></li>
+            <li><input type="checkbox" name="likes" value="fish" id="cb20"/><label for="cb20"><img src="static\yu-.png"></label></li>
+    
+            
+        <br/><br/>
+        <br><br>
+            <button type="submit"> Confirm</button>
+            <button type="reset"> Reset</button>
+        </form>
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+ 
+<p>{{info1}}成功！还有<span id="sp">5</span>秒跳转到选材界面...</p>
+<script>
+    onload=function () {
+    setInterval(go,1000)
+    };
+    var x=1;
+    function go() {
+    
+    if (x>=0){
+    document.getElementById("sp").innerText=x;
+    }else {
+    location.href="{% url 'indexfood' %}"; rel="external nofollow"; rel="external nofollow";
+    }
+    x--;
+    }
+</script>

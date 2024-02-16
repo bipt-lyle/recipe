@@ -1,0 +1,43 @@
+{% extends "myapp/users/base.html" %}
+
+{% block main_body %}
+    <br/><br/>
+    <h1>{{article.Dname}}</h1>
+    <h3>食材</h3>
+    <p>
+    {{article.Ingre}}
+    </p>
+    <h2>做法</h2>
+    <p>
+        {{article.zuofa}}
+    </p>
+    <div style="margin : auto;">
+        <h2>Comments</h2>
+        <h3 style="color : #EDCAA6;">{{ msg }}</h3>
+    
+        {% for com in comm.all %}
+        <div>
+    
+            <a>{{com.name}}</a>
+    
+            <div class="text">{{com.com}}</div>
+            <div>
+                <span>{{com.tim}}</span>
+            </div>
+        </div>
+        {% endfor %}
+        <form method="POST" action="{% url 'details2' article.id %}">
+            {% csrf_token %}
+            <div>
+                <input name ="username" type="text" readonly="readonly" value="{{request.session.adminuser.Uname}}">
+                <br/><br/>
+                <textarea name="coment"></textarea>
+            </div>
+            <input type="submit" value="envoyer">
+        </form>
+        <a href="{% url 'recipe2' %}">return</a>
+    
+    
+    </div>
+{% endblock %}
+
